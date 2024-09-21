@@ -2,7 +2,7 @@ import React from "react";
 
 const Resume = () => {
   return (
-    <section>
+    <section className="resume">
       <h2>Resume</h2>
       <a
         href="https://docs.google.com/document/d/19EGhJX6VmYzs578CwG9zGtzoFHI5vepM4MvXLySdQeY/pub"
