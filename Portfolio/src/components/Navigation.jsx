@@ -3,11 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
-  faProjectDiagram,
   faEnvelope,
   faFileAlt,
   faFolderOpen,
-} from "@fortawesome/free-solid-svg-icons"; // Import solid icons
+} from "@fortawesome/free-solid-svg-icons";
 
 const Navigation = () => {
   const location = useLocation();
