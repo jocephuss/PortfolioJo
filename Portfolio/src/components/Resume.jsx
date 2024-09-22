@@ -132,9 +132,15 @@ const Resume = () => {
             Built a CMS-style blog site with user authentication and CRUD
             functionality using Handlebars.js, Express, and PostgresSQL.
           </li>
+          <li>Created a Social Networking API using a NoSQL database.</li>
           <li>
-            Created a Social Networking API using a NoSQL database and created a
-            PWA text editor.
+            Optimized database queries and server-side rendering to improve
+            performance and SEO.
+          </li>
+          <li>Created a PWA text editor.</li>
+          <li>
+            Integrated session management with express-session and utilized
+            Sequelize for ORM.
           </li>
         </ul>
       </section>
