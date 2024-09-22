@@ -3,7 +3,7 @@
   font-family: Arial, Helvetica, sans-serif;
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
+  --bg-primary: #333;
   --bg-secondary: #141418;
   --purp: rgb(139, 40, 231);
 }
@@ -12,7 +12,11 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: white;
+  background-color: var(--text-secondary);
+  background-image: url(../assets/ml72g4h3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body::-webkit-scrollbar {
@@ -40,6 +44,23 @@ body::-webkit-scrollbar-track {
 
 header {
   text-align: center;
+  margin: auto;
+  padding: auto;
+}
+
+.Me {
+  font-size: 5rem;
+  /* background-image: url(../assets/ml72g4h3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+  /* background-color: var(--bg-primary);
+  color: var(--text-primary); */
+  background-color: #ecececc9;
+  width: auto;
+  margin: auto;
+  text-decoration: underline;
+  /* border: 2px solid var(--purp); */
 }
 
 .sidebar {
@@ -61,7 +82,7 @@ header {
 }
 
 .sidebar-nav {
-  flex-grow: 1; /* Let the main navigation take the remaining space */
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -158,4 +179,94 @@ footer a:hover {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.resume-header h2 {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.resume-header p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.resume-section {
+  margin-bottom: 20px;
+}
+
+.resume-section h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.resume-section p,
+.resume-section ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.resume-section ul {
+  list-style-type: disc;
+}
+
+.resume-section ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.contactme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ecececc9;
+  height: 300px auto;
+  width: 300px;
+  border: 2px solid var(--bg-primary);
+}
+
+label,
+input,
+textarea {
+  margin: auto;
+  padding: 5px;
+  border-radius: 3px;
+  width: 15rem;
 }

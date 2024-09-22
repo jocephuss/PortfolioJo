@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,10 +17,33 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form data:", formData);
-      alert("Message sent!");
+      sendEmail();
       setFormData({ name: "", email: "", message: "" });
     }
+  };
+
+  const sendEmail = () => {
+    emailjs
+      .send(
+        "service_3kdh2jf",
+        "template_jof8bva",
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "_UP4bqjHbOkJT2dsn"
+      )
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          alert("Your message has been sent!");
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          alert("There was an error sending your message.");
+        }
+      );
   };
 
   const validateForm = () => {
@@ -49,33 +73,33 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="contactme">
+      <h2>Contact Me Via Email</h2>
+      <form className="form" onSubmit={handleSubmit}>
         <label>
-          Name:
           <input
             type="text"
             name="name"
+            placeholder="Name"
             value={formData.name}
             onChange={handleChange}
           />
           {errors.name && <p>{errors.name}</p>}
         </label>
         <label>
-          Email:
           <input
             type="email"
             name="email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
           />
           {errors.email && <p>{errors.email}</p>}
         </label>
         <label>
-          Message:
           <textarea
             name="message"
+            placeholder="Message"
             value={formData.message}
             onChange={handleChange}
           />

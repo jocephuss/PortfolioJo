@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -20,13 +20,13 @@ const Footer = () => {
       >
         <FontAwesomeIcon icon={faLinkedin} />
       </a>
-      <a
+      {/* <a
         href="mailto:rowlandjosiah14@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon icon={faEnvelope} />
-      </a>
+      </a> */}
     </footer>
   );
 };
