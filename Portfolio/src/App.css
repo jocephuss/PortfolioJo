@@ -40,6 +40,10 @@ body::-webkit-scrollbar-track {
 .content {
   margin-left: 5rem;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -49,20 +53,48 @@ header {
 }
 
 .Me {
-  font-size: 5rem;
+  font-size: 4rem;
   /* background-image: url(../assets/ml72g4h3.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; */
   /* background-color: var(--bg-primary);
   color: var(--text-primary); */
-  background-color: #ecececc9;
+  background-color: #ececec9f;
   width: auto;
   margin: auto;
   text-decoration: underline;
-  /* border: 2px solid var(--purp); */
 }
 
+/* About me section below */
+
+.About {
+  width: 90%;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #ececec9f;
+}
+
+.about-me img {
+  border: 2px solid var(--purp);
+  border-radius: 5px;
+  margin-right: 1rem;
+  max-width: 200px;
+  height: auto;
+}
+
+.about-me-text {
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+/* Sidebar section below */
 .sidebar {
   position: fixed;
   left: 0;
@@ -75,6 +107,7 @@ header {
   align-items: center;
   padding: 1rem 0;
   transition: width 200ms ease;
+  border: 1px solid var(--purp);
 }
 
 .sidebar:hover {
@@ -152,7 +185,7 @@ li {
   background-color: rgba(255, 255, 255, 0.1);
   text-decoration: none;
 }
-
+/* footer section below*/
 footer {
   display: flex;
   flex-direction: row;
@@ -169,13 +202,15 @@ footer a:hover {
   transform: scale(1.2);
 }
 
-.resume {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #777;
 }
 
-.port {
+/* Resume section below */
+.resume {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -237,17 +272,13 @@ footer a:hover {
   margin-bottom: 10px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 0.9rem;
-  color: #777;
-}
-
+/* Contact section below */
 .contactme {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #ececec9f;
+  border: 2px solid var(--bg-primary);
 }
 
 form {
@@ -256,7 +287,7 @@ form {
   align-items: center;
   margin: 5px;
   padding: 5px;
-  background-color: #ecececc9;
+  background-color: #ececec9f;
   height: 300px auto;
   width: 300px;
   border: 2px solid var(--bg-primary);
@@ -269,4 +300,129 @@ textarea {
   padding: 5px;
   border-radius: 3px;
   width: 15rem;
+}
+
+/* Portfolio section below */
+.port {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ececec9f;
+  border: 1px solid var(--bg-primary);
+  padding: 1rem;
+  width: 80%;
+}
+
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.links {
+  border: 1px solid var(--bg-secondary);
+  border-radius: 5px;
+  margin: 8px;
+  padding: 5px;
+}
+
+.links:hover {
+  transform: scale(1.05);
+}
+
+/* Smaller screen CSS below */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .root {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    margin: auto;
+  }
+
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    top: auto;
+    width: 100vw;
+    height: 4rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    transition: none;
+  }
+
+  .sidebar-nav,
+  .sidebar-contact {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+
+  .sidebar-nav a,
+  .sidebar-contact a {
+    height: auto;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .text {
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  .sidebar:hover {
+    width: 100vw;
+  }
+
+  .sidebar-nav a:hover,
+  .sidebar-contact a:hover {
+    color: inherit;
+    background-color: inherit;
+  }
+
+  li {
+    margin: 0.5rem;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .links {
+    margin: 2px;
+    padding: 2px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: none;
+  }
+
+  .links img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
 }

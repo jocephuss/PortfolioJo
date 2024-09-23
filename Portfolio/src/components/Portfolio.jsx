@@ -9,19 +9,19 @@ const projectsData = [
     link: "http://example.com",
     repo: "http://github.com",
   },
-  {
-    id: 2,
-    title: "Project Two",
-    description: "This is the second project.",
-    link: "http://example.com",
-    repo: "http://github.com",
-  },
+  //   {
+  //     id: 2,
+  //     title: "Project Two",
+  //     description: "This is the second project.",
+  //     link: "http://example.com",
+  //     repo: "http://github.com",
+  //   },
 ];
 
 const Portfolio = () => {
   return (
     <div className="port">
-      <h2>My Portfolio</h2>
+      <h1 style={{ textDecoration: "underline" }}>Portfolio</h1>
       <div>
         {projectsData.map((project) => (
           <Project key={project.id} project={project} />

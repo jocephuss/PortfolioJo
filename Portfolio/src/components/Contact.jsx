@@ -74,7 +74,7 @@ const Contact = () => {
 
   return (
     <div className="contactme">
-      <h2>Contact Me Via Email</h2>
+      <h2>Contact me via Email</h2>
       <form className="form" onSubmit={handleSubmit}>
         <label>
           <input
