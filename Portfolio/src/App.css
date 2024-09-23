@@ -54,16 +54,12 @@ header {
 
 .Me {
   font-size: 4rem;
-  /* background-image: url(../assets/ml72g4h3.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed; */
-  /* background-color: var(--bg-primary);
-  color: var(--text-primary); */
+
   background-color: #ececec9f;
   width: auto;
   margin: auto;
   text-decoration: underline;
+  padding: 10px;
 }
 
 /* About me section below */
