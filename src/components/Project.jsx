@@ -6,6 +6,7 @@ import Note from "../assets/Notetaker.png";
 import flash from "../assets/flashcard.png";
 
 function Project({ title }) {
+  // Return the appropriate project based on the title prop
   return (
     <div className="projects">
       <div className="links">

@@ -2,13 +2,14 @@ import React from "react";
 import profileImage from "../assets/IMG_1766.jpg";
 
 const AboutMe = () => {
+  // About me section with a profile image and text  */}
   return (
     <section className="About">
       <div className="about-me">
         <img
           src={profileImage}
           alt="Profile Pic"
-          style={{ width: "200px", height: "auto" }}
+          style={{ width: "200px", height: "auto" }} //inline styles for responsiveness  */}
         />
         <div className="about-me-text">
           <h2>About Me</h2>

@@ -6,16 +6,20 @@ import {
   faEnvelope,
   faFileAlt,
   faFolderOpen,
-} from "@fortawesome/free-solid-svg-icons";
+} from "@fortawesome/free-solid-svg-icons"; // Import the required icons from Font Awesome library
 
 const Navigation = () => {
-  const location = useLocation();
+  // Navigation component for the sidebar menu
+  const location = useLocation(); // Get the current URL path
 
   return (
     <nav className="sidebar">
       <ul className="sidebar-nav">
         <li className="nav-item">
-          <Link to="/" className={location.pathname === "/" ? "active" : ""}>
+          <Link
+            to="/"
+            className={location.pathname === "/" ? "active" : ""} // Check if the current URL path is "/"
+          >
             <span className="icon">
               <FontAwesomeIcon icon={faHome} />
             </span>
@@ -25,7 +29,7 @@ const Navigation = () => {
         <li className="nav-item">
           <Link
             to="/portfolio"
-            className={location.pathname === "/portfolio" ? "active" : ""}
+            className={location.pathname === "/portfolio" ? "active" : ""} // Check if the current URL path is "/portfolio"
           >
             <span className="icon">
               <FontAwesomeIcon icon={faFolderOpen} />
@@ -36,7 +40,7 @@ const Navigation = () => {
         <li className="nav-item">
           <Link
             to="/resume"
-            className={location.pathname === "/resume" ? "active" : ""}
+            className={location.pathname === "/resume" ? "active" : ""} // Check if the current URL path is "/resume"
           >
             <span className="icon">
               <FontAwesomeIcon icon={faFileAlt} />
@@ -49,7 +53,7 @@ const Navigation = () => {
         <li className="nav-item">
           <Link
             to="/contact"
-            className={location.pathname === "/contact" ? "active" : ""}
+            className={location.pathname === "/contact" ? "active" : ""} // Check if the current URL path is "/contact"
           >
             <span className="icon">
               <FontAwesomeIcon icon={faEnvelope} />
