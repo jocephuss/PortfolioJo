@@ -116,9 +116,12 @@ const Resume = () => {
             Back-End Technologies: Node.js, Express.js, and RESTful API
             Development
           </li>
-          <li>Databases: PostgresSQL, MongoDB</li>
+          <li>Databases: PostgresSQL, MongoDB, GraphQl,</li>
           <li>Tools & Platforms: Git, GitHub, VS Code, NPM, Jest</li>
-          <li>Other Skills: REGEX, Agile Methodologies, Version Control</li>
+          <li>
+            Other Skills: REGEX, Agile Methodologies, Version Control, MERN
+            stack.
+          </li>
         </ul>
       </section>
 
