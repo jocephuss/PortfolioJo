@@ -117,7 +117,7 @@ const Resume = () => {
             Development
           </li>
           <li>Databases: PostgresSQL, MongoDB.</li>
-          <li>Tools & Platforms: Git, GitHub, VS Code, NPM, Jest</li>
+          <li>Tools & Platforms: Git, GitHub, VS Code, NPM, Jest, graphQL</li>
           <li>
             Other Skills: REGEX, Agile Methodologies, Version Control, MERN
             stack.
