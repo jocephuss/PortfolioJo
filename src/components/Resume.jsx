@@ -7,8 +7,6 @@ const Resume = () => {
     <div className="resume-container">
       <header className="resume-header">
         <h1>Full Stack Developer</h1>
-        <p>1275 Escalante Dr, Durango, CO 81303</p>
-        <p>(330) 432-2825 | rowlandjosiah14@gmail.com</p>
       </header>
 
       <section className="resume-section">
