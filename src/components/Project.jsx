@@ -4,6 +4,7 @@ import Jate from "../assets/texteditor.png";
 import task from "../assets/taskboard.png";
 import Note from "../assets/Notetaker.png";
 import flash from "../assets/CDflashcards.png";
+import record from "../assets/recordingstudio.png";
 
 function Project({ title }) {
   // Return the appropriate project based on the title prop
@@ -88,6 +89,15 @@ function Project({ title }) {
             style={{ width: "400px", height: "auto" }}
           />
         </a>
+      </div>
+      <div className="links">
+        <h2>Recording Studio:</h2>
+        <p>Booking</p>
+        <img
+          src={record}
+          alt={title}
+          style={{ width: "400px", height: "auto" }}
+        />
       </div>
     </div>
   );
