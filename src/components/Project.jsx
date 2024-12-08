@@ -3,7 +3,7 @@ import SQLapp from "../assets/SQLemptracker.png";
 import Jate from "../assets/texteditor.png";
 import task from "../assets/taskboard.png";
 import Note from "../assets/Notetaker.png";
-import flash from "../assets/flashcard.png";
+import flash from "../assets/CDflashcards.png";
 
 function Project({ title }) {
   // Return the appropriate project based on the title prop
@@ -78,7 +78,7 @@ function Project({ title }) {
         <p>Flash card generator</p>
 
         <a
-          href={`https://jocephuss.github.io/CD-FlashCards/`}
+          href={`https://cd-flashcards.onrender.com/`}
           target="_blank"
           rel="noopener noreferrer"
         >
