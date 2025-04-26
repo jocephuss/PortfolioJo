@@ -1,11 +1,11 @@
 import React from "react";
 import Navigation from "./Navigation";
+import logo from "../assets/logo.png";
 
 const Header = () => {
-  // Header component with a navigation bar and logo
   return (
     <header>
-      <h1 className="Me">Josiah Rowland</h1>
+      <img src={logo} alt="Josiah Rowland Logo" className="logo" />
       <Navigation />
     </header>
   );

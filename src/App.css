@@ -13,7 +13,7 @@ body {
   padding: 0;
   color: black;
   background-color: var(--text-secondary);
-  background-image: url(../assets/ml72g4h3.png);
+  background-image: url(../assets/websiteBackground.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -50,6 +50,12 @@ header {
   text-align: center;
   margin: auto;
   padding: auto;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  margin: 1rem 0;
 }
 
 .Me {
