@@ -58,7 +58,7 @@ header {
 .logo {
   width: 50px;
   height: auto;
-  margin-right: 1rem;
+  margin-left: 100px;
 }
 
 .Me {
@@ -369,6 +369,10 @@ textarea {
 
   .content {
     margin: auto;
+  }
+
+  .logo {
+    margin-left: none;
   }
 
   .sidebar {
