@@ -51,13 +51,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 0.5rem 1rem;
+  padding-left: 6rem;
   background-color: #333;
+  height: 5rem;
 }
 
 .logo {
-  width: 50px;
+  width: 65px;
   height: auto;
-  margin-left: 100px;
+  margin: 0;
 }
 
 .Me {
@@ -354,14 +357,6 @@ textarea {
     text-align: center;
     margin-bottom: 1rem;
   } */
-
-  header {
-    padding: none !important;
-  }
-
-  .logo {
-    margin-left: none !important;
-  }
 
   .about-me {
     flex-direction: column;
