@@ -15,8 +15,8 @@ body {
   background-color: #f2f2f2;
   background-image: url("../assets/websiteBackground.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center top;
+  background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
 }
 
@@ -48,16 +48,17 @@ body::-webkit-scrollbar-track {
 }
 
 header {
-  text-align: center;
-  margin: auto;
-  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 1rem;
   background-color: #333;
 }
 
 .logo {
-  width: 120px;
+  width: 50px;
   height: auto;
-  margin: 1rem 0;
+  margin-right: 1rem;
 }
 
 .Me {
@@ -76,13 +77,24 @@ header {
   width: 90%;
 }
 
-.about-me {
+/* .about-me {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 1rem;
   margin: 0.5rem;
   background-color: #ececec9f;
+} */
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 1rem;
+  border-radius: 10px;
 }
 
 .about-me img {
@@ -337,11 +349,15 @@ textarea {
 
 /* Smaller screen CSS below */
 @media (max-width: 768px) {
-  .about-me {
+  /* .about-me {
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-bottom: 1rem;
+  } */
+
+  .about-me {
+    flex-direction: column;
   }
 
   .root {
@@ -428,5 +444,11 @@ textarea {
     max-width: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+  }
+
+  body {
+    background-size: contain;
+    background-position: top center;
+    background-attachment: scroll;
   }
 }
