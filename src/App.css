@@ -440,7 +440,7 @@ textarea {
   body {
     background-image: url("../assets/mobilebgr.png");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vh;
     background-position: top center;
     background-attachment: scroll;
   }
