@@ -12,8 +12,8 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #e0e0e0;
-  background-image: url("../assets/SiteBackDrop.png");
+  background-color: #333;
+  background-image: url("../assets/SiteBackDrop2.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -39,8 +39,7 @@ body::-webkit-scrollbar-track {
 }
 
 .content {
-  margin-left: 5rem;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,27 +72,13 @@ header {
 
 /* About me section below */
 
-.About {
-  width: 90%;
-}
-
-/* .about-me {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #ececec9f;
-} */
-
 .about-me {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.85);
-  margin: 1rem;
   border-radius: 10px;
 }
 
@@ -244,6 +229,7 @@ footer {
 .resume-header {
   text-align: center;
   margin-bottom: 20px;
+  color: #d2d2d2;
 }
 
 .resume-header h1 {
@@ -452,7 +438,7 @@ textarea {
   }
 
   body {
-    background-image: url("../assets/SiteBackDrop.png");
+    background-image: url("../assets/SiteBackDrop2.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
