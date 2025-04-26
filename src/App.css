@@ -12,10 +12,10 @@ body {
   margin: 0;
   padding: 0;
   color: black;
-  background-color: #f2f2f2;
-  background-image: url("../assets/websiteBackground.png");
+  background-color: #e0e0e0;
+  background-image: url("../assets/SiteBackDrop.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-attachment: fixed;
 }
@@ -51,7 +51,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 5.5rem;
+  padding-left: 6rem;
   background-color: #333;
 }
 
@@ -452,6 +452,8 @@ textarea {
   }
 
   body {
+    background-image: url("../assets/SiteBackDrop.png");
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     background-attachment: scroll;
