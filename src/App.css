@@ -356,6 +356,14 @@ textarea {
     margin-bottom: 1rem;
   } */
 
+  header {
+    padding: none !important;
+  }
+
+  .logo {
+    margin-left: none !important;
+  }
+
   .about-me {
     flex-direction: column;
   }
@@ -369,10 +377,6 @@ textarea {
 
   .content {
     margin: auto;
-  }
-
-  .logo {
-    margin-left: none;
   }
 
   .sidebar {
