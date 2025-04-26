@@ -51,10 +51,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0.5rem 1rem;
-  padding-left: 6rem;
+  padding-left: 5rem;
   background-color: #333;
-  height: 5rem;
 }
 
 .logo {
@@ -360,6 +358,11 @@ textarea {
 
   .about-me {
     flex-direction: column;
+  }
+
+  header {
+    padding-left: 1rem;
+    justify-content: flex-start;
   }
 
   .root {
