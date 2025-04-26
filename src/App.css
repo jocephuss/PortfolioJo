@@ -15,7 +15,7 @@ body {
   background-color: #333;
   background-image: url("../assets/Desktopbgr.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100vw;
   background-position: 57% center;
   background-attachment: fixed;
 }
