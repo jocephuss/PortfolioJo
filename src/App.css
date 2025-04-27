@@ -457,26 +457,44 @@ textarea {
     list-style-type: none;
   }
 
+  .content {
+    margin-left: 5rem;
+    margin-right: 2rem;
+    padding: 2rem;
+  }
+
+  .port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec9f;
+    border: 1px solid var(--bg-primary);
+    padding: 1.5rem;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
   .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    padding: 1rem;
   }
 
   .links {
-    width: 42%;
-    min-width: 150px;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    box-sizing: border-box;
+    flex: 1 1 calc(42% - 1rem);
+    min-width: 250px;
+    max-width: 400px;
     background-color: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border: 1px solid var(--bg-secondary);
     border-radius: 8px;
     text-align: center;
     transition: transform 0.3s ease;
+    box-sizing: border-box;
   }
-
   .links:hover {
     transform: scale(1.03);
   }
@@ -504,10 +522,10 @@ textarea {
     transform: scale(1.05);
   }
 
-  .social-icon {
+  .social-icons {
     padding: 5px;
   }
-  .social-icon a {
+  .social-icons a {
     margin: 10px;
     font-size: 2rem;
     transition: color 0.3s ease;
