@@ -5,7 +5,6 @@ import AboutMe from "./components/AboutMe";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
-import Footer from "./components/Footer";
 import "./App.css";
 // the App component handles routing and renders the appropriate component based on the current URL path
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
-      <Footer />
     </Router>
   );
 };

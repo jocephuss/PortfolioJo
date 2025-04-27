@@ -373,6 +373,7 @@ textarea {
     justify-content: space-around;
     padding: 0;
     transition: none;
+    background: #333;
   }
 
   .sidebar-nav,
