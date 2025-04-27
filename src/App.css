@@ -405,7 +405,7 @@ button {
     color: #cfcfcf;
     background: #3333338f;
     border-radius: 8px;
-    margin-top: 125px;
+    margin-top: 45px;
     height: 400px;
   }
 
@@ -514,6 +514,7 @@ button {
     width: 95%;
     padding: 0.5rem;
     box-sizing: border-box;
+    margin-bottom: 7rem;
   }
 
   .projects {
