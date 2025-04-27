@@ -452,6 +452,7 @@ button {
     position: fixed;
     bottom: 0;
     left: 0;
+    top: auto;
     width: 100vw;
     height: 5rem;
     background: #333;
