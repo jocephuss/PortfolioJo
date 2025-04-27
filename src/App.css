@@ -282,8 +282,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ececec9f;
   border: 2px solid var(--bg-primary);
+  color: #cfcfcf;
+  background: #3333338f;
+  border-radius: 8px;
 }
 
 form {
@@ -292,19 +294,51 @@ form {
   align-items: center;
   margin: 5px;
   padding: 5px;
-  background-color: #ececec9f;
   height: 300px auto;
   width: 300px;
   border: 2px solid var(--bg-primary);
+  color: #cfcfcf;
+  background: #636363a6;
+  border-radius: 8px;
 }
 
 label,
-input,
-textarea {
-  margin: auto;
+input {
+  margin: 10px;
+  margin-right: 40px;
+  border-radius: 8px;
   padding: 5px;
-  border-radius: 3px;
   width: 15rem;
+  height: 30px;
+}
+
+textarea {
+  margin: 10px;
+  margin-right: 40px;
+  border-radius: 8px;
+  padding: 5px;
+  width: 15rem;
+  height: 50px;
+}
+
+button {
+  margin-top: 40px;
+  padding: 5px;
+  width: 65px;
+  border-radius: 8px;
+  height: 35px;
+  color: #ffffff;
+  background: #63636300;
+  border: 1px solid;
+}
+
+.social-icons {
+  padding: 5px;
+}
+.social-icons a {
+  margin: 10px;
+  font-size: 2rem;
+  transition: color 0.3s ease;
 }
 
 /* Portfolio section below */
@@ -376,6 +410,20 @@ textarea {
     text-align: center;
     margin-bottom: 1rem;
   } */
+
+  form {
+    background: #636363a6;
+    border-radius: 8px;
+    height: 80%;
+  }
+
+  .contactme {
+    color: #cfcfcf;
+    background: #3333338f;
+    border-radius: 8px;
+    margin-top: 125px;
+    height: 400px;
+  }
 
   .About {
     margin-bottom: 50px;
@@ -514,7 +562,7 @@ textarea {
     background-image: url("../assets/mobilebgr.png");
     background-repeat: no-repeat;
     background-size: 100vh;
-    background-position: top center;
-    background-attachment: scroll;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
