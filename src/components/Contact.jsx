@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-// import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import TagzLogo from "../assets/TagzLogo.png";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -99,7 +99,7 @@ const Contact = () => {
           />
           {errors.email && <p>{errors.email}</p>}
         </label>
-        <label>
+        <label className="textarea">
           <textarea
             name="message"
             placeholder="Message"
@@ -126,6 +126,13 @@ const Contact = () => {
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a
+          href="https://www.tagzconnect.com/card/680c32e5bbbfc611328301e2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={TagzLogo} alt="Tagz Logo" className="tagz-logo" />
         </a>
       </div>
     </div>

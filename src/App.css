@@ -312,7 +312,7 @@ input {
   height: 30px;
 }
 
-textarea {
+.textarea {
   margin: 10px;
   margin-right: 40px;
   border-radius: 8px;
@@ -339,6 +339,18 @@ button {
   margin: 10px;
   font-size: 2rem;
   transition: color 0.3s ease;
+}
+
+.tagz-logo {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.tagz-logo:hover {
+  transform: scale(1.1);
 }
 
 /* Portfolio section below */
