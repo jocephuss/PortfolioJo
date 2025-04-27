@@ -262,6 +262,7 @@ li {
   color: #cfcfcf;
   background: #3333338f;
   border-radius: 8px;
+  padding: 5px;
 }
 
 form {
@@ -290,7 +291,7 @@ textarea {
 }
 
 button {
-  margin-top: 40px;
+  margin-top: 25px;
   padding: 5px;
   width: 65px;
   border-radius: 8px;
@@ -305,7 +306,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 1.5rem;
 }
 
 .social-icons a {
@@ -407,6 +407,7 @@ button {
     border-radius: 8px;
     margin-top: 125px;
     height: 400px;
+    margin-right: 1.4rem;
   }
 
   .About {
@@ -415,10 +416,16 @@ button {
 
   .resume-container {
     margin-bottom: 50px;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    margin-right: 1.4rem;
   }
 
   .about-me {
     flex-direction: column;
+    box-sizing: border-box;
+    margin-right: 1.4rem;
+    padding: 0.5rem;
   }
 
   .about-me-text {
@@ -497,9 +504,10 @@ button {
   }
 
   .port {
-    width: 100%;
+    width: 95%;
     padding: 0.5rem;
     box-sizing: border-box;
+    margin-right: 1.4rem;
   }
 
   .projects {
