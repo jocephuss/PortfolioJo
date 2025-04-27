@@ -262,49 +262,43 @@ li {
   color: #cfcfcf;
   background: #3333338f;
   border-radius: 8px;
-  padding: 1.5rem;
-  width: 400px;
-  margin: 2rem auto;
+  padding: 5px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  height: 300px auto;
+  width: 300px;
+  border: 2px solid var(--bg-primary);
+  color: #cfcfcf;
+  background: #636363a6;
+  border-radius: 8px;
 }
 
-label {
-  width: 100%;
-}
-
+label,
 input,
 textarea {
-  width: 100%;
-  padding: 0.5rem;
+  margin: 10px;
+  margin-right: 40px;
   border-radius: 8px;
-  border: 1px solid var(--bg-primary);
-  background: #636363a6;
-  color: #fff;
-}
-
-textarea {
-  min-height: 80px;
+  padding: 5px;
+  width: 15rem;
+  height: 30px;
 }
 
 button {
-  margin-top: 1rem;
-  padding: 0.6rem 1rem;
+  margin-top: 25px;
+  padding: 5px;
+  width: 65px;
   border-radius: 8px;
-  background: var(--purp);
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #9a78f0;
+  height: 35px;
+  color: #ffffff;
+  background: #63636300;
+  border: 1px solid;
 }
 
 .social-icons {
@@ -312,24 +306,25 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 1rem;
 }
 
 .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 2rem;
   color: var(--text-primary);
   transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: var(--purp);
+  text-decoration: none;
 }
 
 .tagz-logo {
   width: 2rem;
   height: 2rem;
   object-fit: contain;
+  margin: 0;
 }
+
 /* Portfolio section below */
 .port {
   display: flex;
@@ -400,60 +395,18 @@ button:hover {
     margin-bottom: 1rem;
   } */
 
-  .contactme {
-    width: 90%;
-    margin-top: 110px;
-    padding: 1rem;
-    background: #3333338f;
-    border-radius: 8px;
-    border: 2px solid var(--bg-primary);
-  }
-
   form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
     background: #636363a6;
     border-radius: 8px;
+    height: 80%;
   }
 
-  input,
-  textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 6px;
-    font-size: 0.9rem;
-  }
-
-  textarea {
-    min-height: 70px;
-  }
-
-  button {
-    margin-top: 0.5rem;
-    width: 100%;
-    padding: 0.6rem;
+  .contactme {
+    color: #cfcfcf;
+    background: #3333338f;
     border-radius: 8px;
-    background: var(--purp);
-    color: white;
-    border: none;
-  }
-
-  .social-icons {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-  }
-
-  .social-icons a {
-    font-size: 1.8rem;
-  }
-
-  .tagz-logo {
-    width: 2rem;
-    height: 2rem;
+    margin-top: 125px;
+    height: 400px;
   }
 
   .About {
@@ -559,8 +512,6 @@ button:hover {
 
   .port {
     width: 95%;
-    max-width: 1200px;
-    margin: auto;
     padding: 0.5rem;
     box-sizing: border-box;
   }
@@ -568,49 +519,32 @@ button:hover {
   .projects {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .links {
-    flex: 1 1 45%;
+    flex: 1 1 40%;
     min-width: 140px;
     max-width: 180px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 0.8rem;
-    border: 1px solid var(--bg-secondary);
-    border-radius: 8px;
-    text-align: center;
-    box-sizing: border-box;
-    transition: transform 0.3s ease;
-  }
-
-  .links:hover {
-    transform: scale(1.03);
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
 
   .links h2 {
     font-size: 0.9rem;
-    margin-bottom: 0.3rem;
-    color: var(--text-primary);
+    margin-bottom: 0.25rem;
   }
 
   .links p {
     font-size: 0.7rem;
-    margin-bottom: 0.5rem;
-    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
   }
 
   .links img {
-    width: 100%;
-    max-height: 100px;
-    object-fit: cover;
-    border-radius: 6px;
-    transition: transform 0.3s ease;
-  }
-
-  .links img:hover {
-    transform: scale(1.05);
+    max-height: 80px;
+    border-radius: 4px;
   }
 
   .social-icons {
