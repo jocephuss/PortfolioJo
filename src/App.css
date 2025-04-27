@@ -461,7 +461,7 @@ button {
     align-items: center;
     padding: 0;
     border-top: 1px solid var(--purp);
-    transition: none;
+    z-index: 1000;
   }
 
   .sidebar-nav,
@@ -471,7 +471,7 @@ button {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
+    margin: auto;
   }
 
   .sidebar-nav a,
@@ -480,27 +480,30 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
-    padding: 0;
-    color: var(--text-primary);
     text-decoration: none;
+    color: var(--text-primary);
+    height: auto;
+    padding: 0.3rem;
   }
 
   .icon {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .text {
     display: block;
     font-size: 0.7rem;
-    margin-top: 0.2rem;
-    text-align: center;
+    margin-top: 2px;
+  }
+
+  .sidebar:hover {
+    width: 100vw;
   }
 
   .sidebar-nav a:hover,
   .sidebar-contact a:hover {
     color: var(--purp);
-    background-color: inherit;
+    background-color: transparent;
   }
 
   li {
