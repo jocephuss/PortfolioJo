@@ -438,6 +438,16 @@ textarea {
     transition: transform 0.3s ease;
   }
 
+  .social-icons {
+    padding: 5px;
+  }
+  .social-icons a {
+    margin: 5px;
+    font-size: 2rem;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+  }
+
   body {
     background-image: url("../assets/mobilebgr.png");
     background-repeat: no-repeat;
