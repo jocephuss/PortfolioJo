@@ -457,12 +457,6 @@ textarea {
     list-style-type: none;
   }
 
-  .content {
-    margin-left: 5rem;
-    margin-right: 2rem;
-    padding: 2rem;
-  }
-
   .port {
     display: flex;
     flex-direction: column;
