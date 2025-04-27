@@ -496,7 +496,7 @@ button {
   }
 
   .sidebar:hover {
-    width: 100vw;
+    width: 99%;
   }
 
   .sidebar-nav a:hover,
