@@ -317,20 +317,48 @@ textarea {
 
 .projects {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem; /* space between cards */
 }
 
+/* Fix each project card */
 .links {
+  width: 30%; /* Each box smaller for desktop */
+  min-width: 250px;
+  max-width: 300px;
   border: 1px solid var(--bg-secondary);
   border-radius: 5px;
   margin: 8px;
-  padding: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+}
+
+/* Image scaling */
+.links img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
 }
 
 .links:hover {
   transform: scale(1.05);
+}
+
+/* Title and text smaller too */
+.links h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.links p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* Smaller screen CSS below */
@@ -342,7 +370,7 @@ textarea {
     margin-bottom: 1rem;
   } */
 
-  .about {
+  .About {
     margin-bottom: 50px;
   }
 
@@ -438,21 +466,42 @@ textarea {
   }
 
   .links {
-    width: 45%;
-    min-width: 160px;
+    width: 42%;
+    min-width: 150px;
     margin: 0.5rem;
     padding: 0.5rem;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 8px;
     text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .links:hover {
+    transform: scale(1.03);
+  }
+
+  .links h2 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .links p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .links img {
     width: 100%;
     height: auto;
+    max-height: 120px;
     object-fit: cover;
     border-radius: 6px;
+    transition: transform 0.3s ease;
+  }
+
+  .links img:hover {
+    transform: scale(1.05);
   }
 
   .social-icons {
