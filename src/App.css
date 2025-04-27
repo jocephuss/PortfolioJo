@@ -342,8 +342,20 @@ textarea {
     margin-bottom: 1rem;
   } */
 
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .resume-container {
+    margin-bottom: 50px;
+  }
+
   .about-me {
     flex-direction: column;
+  }
+
+  .about-me-text {
+    font-size: 1.1rem;
   }
 
   header {
