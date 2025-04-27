@@ -3,7 +3,6 @@ import React from "react";
 const Resume = () => {
   //This is the Resume component that renders the resume page
   return (
-    // JSX for Resume component below , styled with CSS in App.css
     <div className="resume-container">
       <header className="resume-header">
         <h1>Full Stack Developer</h1>

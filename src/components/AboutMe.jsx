@@ -9,7 +9,7 @@ const AboutMe = () => {
         <img
           src={profileImage}
           alt="Profile Pic"
-          style={{ width: "200px", height: "auto" }} //inline styles for responsiveness  */}
+          style={{ width: "200px", height: "auto" }}
         />
         <div className="about-me-text">
           <h2>About Me</h2>

@@ -342,14 +342,14 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; /* space between cards */
+  gap: 1rem;
   border-radius: 8px;
   background: #49494978;
 }
 
 /* Fix each project card */
 .links {
-  width: 30%; /* Each box smaller for desktop */
+  width: 30%;
   min-width: 250px;
   max-width: 300px;
   border: 1px solid var(--bg-secondary);
@@ -455,10 +455,10 @@ button {
     width: 100vw;
     height: 5rem;
     background: #333;
-    display: flex; /* <--- ADD this */
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center; /* vertically center everything */
+    align-items: center;
     padding: 0;
     border-top: 1px solid var(--purp);
     transition: none;
@@ -466,7 +466,7 @@ button {
 
   .sidebar-nav,
   .sidebar-contact {
-    display: flex; /* <--- ADD this */
+    display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
