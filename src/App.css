@@ -442,9 +442,8 @@ textarea {
     padding: 5px;
   }
   .social-icons a {
-    margin: 5px;
+    margin: 10px;
     font-size: 2rem;
-    color: var(--text-primary);
     transition: color 0.3s ease;
   }
 
