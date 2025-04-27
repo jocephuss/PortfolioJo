@@ -417,25 +417,30 @@ textarea {
     list-style-type: none;
   }
 
-  .links {
-    margin: 2px;
-    padding: 2px;
-    width: 100%;
-    height: auto;
-    text-align: center;
+  .projects {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    transition: none;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .links {
+    width: 45%;
+    min-width: 160px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    text-align: center;
   }
 
   .links img {
     width: 100%;
     height: auto;
-    max-width: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    border-radius: 6px;
   }
 
   .social-icons {
